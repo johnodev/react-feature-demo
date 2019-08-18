@@ -27,12 +27,16 @@ class ReduxList extends PureComponent {
   }
 
   render () {
+    const { dataList } = this.props.app;
+
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
     }
     return (
       <div className="ReduxListWrapper">
-        Test content
+        <pre>
+          {JSON.stringify(dataList, null, '\t')}
+        </pre>
       </div>
     );
   }
