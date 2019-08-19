@@ -5,6 +5,7 @@ const Main = (props) => (
   <div className="MainWrapper">
     <h1>Main Landing Page</h1>
     <Link to="/redux-list">Redux List</Link>
+    <Link to="/context-list">Context List</Link>
   </div>
 );
 

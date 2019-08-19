@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
-import Main from '../Main';
-import ReduxList from '../ReduxList';
+import Main from 'components/Main';
+import ReduxList from 'components/ReduxList';
+import ContextList from 'components/ContextList';
 
 const Routes = (props) => {
   console.log('roiuter')
@@ -9,6 +10,7 @@ const Routes = (props) => {
   <BrowserRouter>
     <Route exact path="/" component={Main} />
     <Route path="/redux-list" component={ReduxList} />
+    <Route path="/context-list" component={ContextList} />
   </BrowserRouter>
   )
 
